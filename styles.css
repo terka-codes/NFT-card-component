@@ -23,7 +23,7 @@ html {
     max-width: 350px;
     aspect-ratio: 175 / 298;
     background-color: hsl(216, 50%, 16%);
-    border-radius: 1.8rem;
+    border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +32,7 @@ html {
 
 #card > #eq-img {
     width: 86%;
-    margin-top: 2.4rem;
+    margin-top: 2.1rem;
     display: block;
     position: relative;
 }
@@ -199,5 +199,14 @@ footer p {
     hr {
         margin: 2rem 0;
     }
+
+    #card {
+        border-radius: 1.8rem;
+    }
+
+    #card > #eq-img {
+        margin-top: 2.4rem;
+    }
+
 }
 
