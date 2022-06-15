@@ -8,6 +8,7 @@ html {
     color: hsl(0, 0%, 100%);
     font-size: 10px;
     font-family: 'Outfit', sans-serif;
+    height: 100vh;
 }
 
 .flex-container {
@@ -20,33 +21,44 @@ html {
 #card {
     width: 86.67%;
     max-width: 350px;
+    aspect-ratio: 175 / 298;
     background-color: hsl(216, 50%, 16%);
-    border-radius: 1.5rem;
+    border-radius: 1.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 0 4rem hsl(0, 0%, 0%, 0.3);
+    box-shadow: 0 0 6rem hsl(0, 0%, 0%, 0.3);
 }
 
 #card > #eq-img {
     width: 86%;
-    margin-top: 2.1rem;
+    margin-top: 2.4rem;
     display: block;
+    position: relative;
 }
 
-#card > #eq-img > #img {
+#card > #eq-img > a > #img {
     width: 100%;
-    border-radius: 0.8rem;
+    border-radius: 1rem;
 }
 
-#card > #eq-img > #icon {
+#card > #eq-img > a > #icon {
     position: absolute;
-    top: O;
+    top: 0;
     left: 0;
-
+    background-color: hsl(178, 100%, 50%, 0.5);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
 }
 
+#card > #eq-img > a > #icon:hover {
+    opacity: 1;
+}
 
 #text {
     width: 86%;
@@ -139,7 +151,53 @@ hr {
     font-size: 15.2px;
     padding-left: 0.5ch;
 }
- /* 
-#attribution {
 
+footer {
+    background-color: hsl(216, 50%, 16%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
 }
+
+footer p {
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: hsl(0, 0%, 100%, 0.5);
+}
+
+#fm:link, #tw:link, #fm:visited, #tw:visited{
+    color: hsl(0, 0%, 100%, 0.7);
+}
+
+#fm:hover, #tw:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+@media screen and (min-width: 900px) {
+    #text > p {
+        font-size: 1.805rem;
+        line-height: 142%;
+    }
+
+    .left > p, .right > p, #creation > p, #creation a {
+        font-size: 1.62rem;
+    }
+
+    #icons {
+        margin: 2rem auto;
+    }
+
+    #creator {
+        margin: 1.2rem auto;
+    }
+
+    hr {
+        margin: 2rem 0;
+    }
+}
+
