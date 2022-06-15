@@ -23,8 +23,7 @@ https://user-images.githubusercontent.com/107133029/173848448-91c0014c-2c96-458a
 
 ### Links to solution
 
-- Solution: [Solution on Frontend Mentor]() , [HTML](https://github.com/terka-codes/QR-code-component/blob/main/index.html), [CSS](https://github.com/terka-codes/QR-code-component/blob/main/styles.css)
-- Live Site: [here](https://terka-codes.github.io/QR-code-component/)
+- Solution: [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-nft-card-component-using-css-flexbox-OYoGIzlii1) , [HTML](https://github.com/terka-codes/NFT-card-component/blob/main/index.html), [CSS](https://github.com/terka-codes/NFT-card-component/blob/main/styles.css)
 
 ### Screenshot
 
